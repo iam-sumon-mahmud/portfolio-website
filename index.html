@@ -1,163 +1,240 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <title>
-            Sumon Dev | Web Developer
-        </title>
-        <meta name="description" content="Sumon Mahmud | I am Web Developer, My Skills is HTML, CSS, JAVASCRIPT. Frontend and also Backend Developement.">
-        <meta name="keywords" content="Sumon, Mahmud, Web Developer, Web Designer, Bd Web Developer, Sumon Mahmud">
-    
+  <head>
+    <title>Sumon Dev | Web Developer</title>
+    <meta
+      name="description"
+      content="Sumon Mahmud | I am Web Developer, My Skills is HTML, CSS, JAVASCRIPT. Frontend and also Backend Developement."
+    />
+    <meta
+      name="keywords"
+      content="Sumon, Mahmud, Web Developer, Web Designer, Bd Web Developer, Sumon Mahmud"
+    />
+
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+      /* color variables */
+      :root {
+        --primary: #0b0f19;
+        --secondary: #111827;
+        --PrimaryAccent: #38bdf8;
+        --SecondaryAccent: #818cf8;
+        --primaryText: #f8fafc;
+        --grayText: #94a3b8;
+        --white: #fff;
+      }
 
-        /* color variables */
-        :root{
-            --primary : #0B0F19;
-            --secondary: #111827;
-            --PrimaryAccent : #38BDF8;
-            --SecondaryAccent: #818CF8;
-            --primaryText: #F8FAFC;
-            --grayText: #94A3B8;
-            --white: #fff;
-            
-        }
+      header {
+        color: var(--primaryText);
+        background-color: var(--primary);
+      }
 
+      nav {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
 
-        header{
-            
-            color: var(--primaryText);
-            background-color: var(--primary);
-        }
+      .logo {
+        font-size: 25px;
+        font-weight: bolder;
+        transition: transform 0.5s ease;
+      }
 
-        nav{
-            max-width: 1100px;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
+      .logo:hover {
+        transform: scale(1.1);
+        color: var(--PrimaryAccent);
+        cursor: pointer;
+      }
 
-        .logo{
-            font-size: 25px;
-            font-weight: bolder;
-            transition: transform .5s ease;
-        }
+      ul,
+      li,
+      a {
+        color: var(--primaryText);
+        display: flex;
+        font-size: 20px;
+        padding: 10px 12px;
+        text-decoration: none;
+      }
 
-        .logo:hover{
-            transform: scale(1.1);
-            color: var(--PrimaryAccent);
-            cursor: pointer;
-        }
+      a:hover {
+        color: var(--PrimaryAccent);
+        font-weight: 600;
+      }
 
-        ul, li,  a{
-            color: var(--primaryText);
-            display: flex;
-            font-size: 20px;
-            padding: 10px 12px;
-            text-decoration: none;
-        }
+      .btn-primary {
+        border: none;
+        padding: 10px 15px;
+        border-radius: 15px;
+        color: var(--primaryText);
+        background-color: var(--PrimaryAccent);
+        transition: transform 0.5s ease;
+      }
+      .btn-secondary {
+        border: none;
+        padding: 10px 15px;
+        font-size: 12px;
+        border-radius: 15px;
+        color: var(--primaryText);
+        background-color: var(--SecondaryAccent);
+        transition: transform 0.5s ease;
+      }
 
+      .btn-primary:hover {
+        color: var(--white);
+        transform: scale(1.1);
+      }
 
-        a:hover{
-            color: var(--PrimaryAccent);
-            font-weight: 600;
-        }
+      /* hero section start */
+      .hero_section {
+        height: 80vh;
+        margin: 0 auto;
+        max-width: 1100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
 
-        .btn-primary{
-            border: none;
-            padding: 10px 15px;
-            border-radius: 15px;
-            color: var(--primaryText);
-            background-color: var(--PrimaryAccent);
-            transition: transform .5s ease;
-        }
-        .btn-secondary{
-            border: none;
-            padding: 10px 15px;
-            font-size: 12px;
-            border-radius: 15px;
-            color: var(--primaryText);
-            background-color: var(--SecondaryAccent);
-            transition: transform .5s ease;
-        }
+      .left_side,
+      h1,
+      p,
+      button {
+        margin-bottom: 15px;
+      }
 
-        .btn-primary:hover{
-            color: var(--white);
-            transform: scale(1.1);
-        }
+      .left_side h1 {
+        font-size: 45px;
+      }
 
-        /* hero section start */
-        .hero_section{
-            height: 80vh;
-            margin: 0 auto;
-            max-width: 1100px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+      .left_side span {
+        font-weight: 700;
+        color: var(--PrimaryAccent);
+      }
 
-        }
+      .card_section {
+        gap: 80px;
+        max-width: 1100px;
+        margin: 40px auto;
+        display: grid;
+        align-self: center;
+        justify-self: center;
+        grid-template-columns: repeat(3, 1fr);
+      }
 
-        .left_side, h1, p, button {
-            margin-bottom: 15px;
-        }
+      .card{
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        padding: 12px;
+        width: 300px;
+        height: 350px;
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
 
-        .left_side h1{
-            font-size: 45px;
-        }
+      .card h3,p, .card_btn{
+        margin-top: 10px;
+       margin-bottom: 10px;
+        
+      }
 
-        .left_side span{
-            font-weight: 700;
-            color: var(--PrimaryAccent);
-        }
+      .card img{
+        border-radius: 15px;
+      }
+
       
     </style>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <div class="logo">
-                    Ar Easy Solution
-                </div>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Ar Easy Solution</div>
 
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
 
-                <div class="hire_me">
-                    <button class="btn-primary">Hire Me!</button>
-                </div>
-            </nav>
-        </header>
-        <!-- end header -->
+        <div class="hire_me">
+          <button class="btn-primary">Hire Me!</button>
+        </div>
+      </nav>
+    </header>
+    <!-- end header -->
 
-        <!-- hero section -->
-         <section class="hero_section">
-            <div class="left_side">
-                <p>
-                    <span>
-                        Create your next Best Website
-                    </span>
-                </p>
-                <h1>
-                    Make your Business Easy With Our Services
-                </h1>
-                <p>
-                    Our main aim a to achived make Business Easy or Simple. Manage your Business Easly and Anywhere...
-                </p>
-                <button class="btn-secondary">Explore</button>
-                <button class="btn-secondary">Next?</button>
-            </div>
-            <div class="right_side">
-                <img src="./images/hero_section_right_img (1).png" alt="hero image" width="600" loading="lazy">
-            </div>
-         </section>
-    </body>
+    <!-- hero section -->
+    <section class="hero_section">
+      <div class="left_side">
+        <p>
+          <span> Create your next Best Website </span>
+        </p>
+        <h1>Make your Business Easy With Our Services</h1>
+        <p>
+          Our main aim a to achived make Business Easy or Simple. Manage your
+          Business Easly and Anywhere...
+        </p>
+        <button class="btn-secondary">Explore</button>
+        <button class="btn-secondary">Next?</button>
+      </div>
+      <div class="right_side">
+        <img
+          src="./images/hero_section_right_img (1).png"
+          alt="hero image"
+          width="600"
+          loading="lazy"
+        />
+      </div>
+    </section>
+
+    <section class="project_section">
+      <center>
+        <h2>Projects</h2>
+        <p>
+          We build most popular Projects School Managemet, Emi System, Blog,
+          News and Portfolio so on
+        </p>
+      </center>
+
+      <div class="card_section">
+
+        <div class="card">
+            <img src="./images/hero_image2.jpg" alt="web Developement" width="100%">
+            <h3>Web Developement</h3>
+            <p>HTML, CSS, and JAVASCRIPT with all framework</p>
+            <button class="btn-primary card_btn">See More...</button>
+        </div>
+
+        <div class="card">
+            <img src="./images/image1.jpg" alt="Custom Developement" width="100%">
+          <h3>Custom Software Project</h3>
+          <p>HTML, CSS, and Laravel with all framework</p>
+          <button class="btn-primary">See More...</button>
+        </div>
+
+        <div class="card">
+            <img src="./images/logo.png" alt="web Developement" width="100%">
+          <h3>Custom Software Project</h3>
+          <p>HTML, CSS, and Laravel with all framework</p>
+          <button class="btn-primary">See More...</button>
+        </div>
+
+        <div class="card">
+            <img src="./images/hero_image2.jpg" alt="web Developement" width="100%">
+          <h3>Custom Software Project</h3>
+          <p>HTML, CSS, and Laravel with all framework</p>
+          <button class="btn-primary">See More...</button>
+        </div>
+
+      </div>
+    </section>
+  </body>
 </html>

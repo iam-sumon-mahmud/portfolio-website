@@ -6,8 +6,100 @@
         </title>
         <meta name="description" content="Sumon Mahmud | I am Web Developer, My Skills is HTML, CSS, JAVASCRIPT. Frontend and also Backend Developement.">
         <meta name="keywords" content="Sumon, Mahmud, Web Developer, Web Designer, Bd Web Developer, Sumon Mahmud">
+    
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* color variables */
+        :root{
+            --primary : #0B0F19;
+            --secondary: #111827;
+            --PrimaryAccent : #38BDF8;
+            --SecondaryAccent: #818CF8;
+            --primaryText: #F8FAFC;
+            --grayText: #94A3B8;
+            --white: #fff;
+            
+        }
+
+
+        header{
+            
+            color: var(--primaryText);
+            background-color: var(--primary);
+        }
+
+        nav{
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo{
+            font-size: 25px;
+            font-weight: bolder;
+        }
+
+        .logo:hover{
+            color: var(--PrimaryAccent);
+            cursor: pointer;
+        }
+
+        ul, li,  a{
+            color: var(--primaryText);
+            display: flex;
+            font-size: 20px;
+            padding: 10px 12px;
+            text-decoration: none;
+        }
+
+
+        a:hover{
+            color: var(--PrimaryAccent);
+            font-weight: 600;
+        }
+
+        .btn-primary{
+            border: none;
+            padding: 12px 15px;
+            border-radius: 15px;
+            color: var(--primaryText);
+            background-color: var(--PrimaryAccent);
+            transition: transform .5s ease;
+        }
+
+        .btn-primary:hover{
+            color: var(--white);
+            transform: scale(1.1);
+        }
+      
+    </style>
     </head>
     <body>
-        <h1>Hay, I am Sumon Design Next Custom Web Site With Best Business Solutiongi</h1>
+        <header>
+            <nav>
+                <div class="logo">
+                    Ar Easy Solution
+                </div>
+
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+
+                <div class="hire_me">
+                    <button class="btn-primary">Hire Me!</button>
+                </div>
+            </nav>
+        </header>
     </body>
 </html>

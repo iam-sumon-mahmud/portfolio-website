@@ -70,16 +70,49 @@
 
         .btn-primary{
             border: none;
-            padding: 12px 15px;
+            padding: 10px 15px;
             border-radius: 15px;
             color: var(--primaryText);
             background-color: var(--PrimaryAccent);
+            transition: transform .5s ease;
+        }
+        .btn-secondary{
+            border: none;
+            padding: 10px 15px;
+            font-size: 12px;
+            border-radius: 15px;
+            color: var(--primaryText);
+            background-color: var(--SecondaryAccent);
             transition: transform .5s ease;
         }
 
         .btn-primary:hover{
             color: var(--white);
             transform: scale(1.1);
+        }
+
+        /* hero section start */
+        .hero_section{
+            height: 80vh;
+            margin: 0 auto;
+            max-width: 1100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .left_side, h1, p, button {
+            margin-bottom: 15px;
+        }
+
+        .left_side h1{
+            font-size: 45px;
+        }
+
+        .left_side span{
+            font-weight: 700;
+            color: var(--PrimaryAccent);
         }
       
     </style>
@@ -103,5 +136,28 @@
                 </div>
             </nav>
         </header>
+        <!-- end header -->
+
+        <!-- hero section -->
+         <section class="hero_section">
+            <div class="left_side">
+                <p>
+                    <span>
+                        Create your next Best Website
+                    </span>
+                </p>
+                <h1>
+                    Make your Business Easy With Our Services
+                </h1>
+                <p>
+                    Our main aim a to achived make Business Easy or Simple. Manage your Business Easly and Anywhere...
+                </p>
+                <button class="btn-secondary">Explore</button>
+                <button class="btn-secondary">Next?</button>
+            </div>
+            <div class="right_side">
+                <img src="./images/hero_section_right_img.png" alt="" width="600">
+            </div>
+         </section>
     </body>
 </html>

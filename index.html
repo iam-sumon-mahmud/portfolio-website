@@ -11,7 +11,8 @@
       content="Sumon, Mahmud, Web Developer, Web Designer, Bd Web Developer, Sumon Mahmud"
     />
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
   </head>
   <body>
     <header>
@@ -38,7 +39,7 @@
         <p>
           <span> Create your next Best Website </span>
         </p>
-        <h1>Make your Business Easy With Our Services</h1>
+        <h1>Make your Business <span id="element"></span> With Our Services</h1>
         <p>
           Our main aim a to achived make Business Easy or Simple. Manage your
           Business Easly and Anywhere...
@@ -66,57 +67,103 @@
       </center>
 
       <div class="card_section">
-
         <div class="card">
-            <img src="./images/hero_image2.jpg" alt="web Developement" width="100%">
-            <h3>Web Developement</h3>
-            <p>HTML, CSS, and JAVASCRIPT with all framework</p>
-            <button class="btn-primary card_btn">See More...</button>
+          <img
+            src="./images/hero_image2.jpg"
+            alt="web Developement"
+            width="100%"
+          />
+          <h3>Web Developement</h3>
+          <p>HTML, CSS, and JAVASCRIPT with all framework</p>
+          <button class="btn-primary card_btn">See More...</button>
         </div>
 
         <div class="card">
-            <img src="./images/image1.jpg" alt="Custom Developement" width="100%">
+          <img
+            src="./images/image1.jpg"
+            alt="Custom Developement"
+            width="100%"
+          />
           <h3>Custom Software Project</h3>
           <p>HTML, CSS, and Laravel with all framework</p>
           <button class="btn-primary">See More...</button>
         </div>
 
         <div class="card">
-            <img src="./images/logo.png" alt="web Developement" width="100%">
+          <img src="./images/logo.png" alt="web Developement" width="100%" />
           <h3>Custom Software Project</h3>
           <p>HTML, CSS, and Laravel with all framework</p>
           <button class="btn-primary">See More...</button>
         </div>
 
         <div class="card">
-            <img src="./images/hero_image2.jpg" alt="web Developement" width="100%">
+          <img
+            src="./images/hero_image2.jpg"
+            alt="web Developement"
+            width="100%"
+          />
           <h3>Custom Software Project</h3>
           <p>HTML, CSS, and Laravel with all framework</p>
           <button class="btn-primary">See More...</button>
         </div>
-
       </div>
     </section>
 
-
     <!-- customer section -->
-     <section>
-        <center>
+    <section>
+      <center>
         <h2>Customers</h2>
-        <p>
-          Our customer list 2026 
-        </p>
+        <p>Our customer list 2026</p>
 
         <marquee scrollamount="16">
-            <img src="./images/image1.jpg" width="19%" alt="customer1">
-            <img src="./images/hero_image2.jpg" width="19%" alt="customer1">
-            <img src="./images/image1.jpg" width="19%" alt="customer1">
-            <img src="./images/hero_image2.jpg" width="19%" alt="customer1">
+          <img src="./images/image1.jpg" width="19%" alt="customer1" />
+          <img src="./images/hero_image2.jpg" width="19%" alt="customer1" />
+          <img src="./images/image1.jpg" width="19%" alt="customer1" />
+          <img src="./images/hero_image2.jpg" width="19%" alt="customer1" />
         </marquee>
       </center>
-     </section>
-     <!-- end customer section -->
+    </section>
+    <!-- end customer section -->
 
-     
+    <!-- footer -->
+    <br /><br />
+    <div class="footer_section">
+      <footer>
+        <div class="company_section">
+          <h1>Ar Easy Solution</h1>
+          <span>www.areasysolution.com</span>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic culpa
+            fugiat quia eaque. Impedit, architecto!
+          </p>
+        </div>
+
+        <div class="social_media">
+          <h3>Social Media Links</h3>
+          <a href="index.html">Home</a>
+          <a href="#">About</a>
+          <a href="image.html">Images</a>
+          <a href="#">Facebook Page</a>
+        </div>
+
+        <div class="services_section">
+          <h5>About Company</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur a dipisicing elit.
+            Assumenda, dolor.
+          </p>
+        </div>
+      </footer>
+    </div>
+    <!-- end footer -->
+
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Easy", "Fast", "Secure"],
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop:true,
+      });
+    </script>
   </body>
 </html>

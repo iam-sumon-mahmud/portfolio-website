@@ -16,6 +16,7 @@
 }
 
 header {
+    
   color: var(--primaryText);
   background-color: var(--primary);
 }
@@ -177,3 +178,57 @@ marquee img {
     align-items: center;
     justify-content: center;
 }
+
+
+
+/* contact page */
+.contact_section{
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  width: 100%;
+  max-width: 1100px;
+  margin: 60px auto;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
+.contact_section .left #first_name{
+  font-size: 18px;
+  padding: 15px;
+  border: none;
+  width: 90%;
+  border-radius: 15px;
+  margin: 15px 5px;
+}
+
+.contact_section .left #last_name{
+  font-size: 18px;
+  padding: 15px;
+  border: none;
+  width: 90%;
+  border-radius: 15px;
+  margin: 0px 5px;
+}
+
+.contact_section .left input[type=email]{
+  font-size: 18px;
+  padding: 15px;
+  border: none;
+  width: 90%;
+  border-radius: 15px;
+  margin: 0px 5px;
+}
+
+.contact_section .left input[type=submit]{
+  font-size: 18px;
+  padding: 15px;
+  border: none;
+  width: 90%;
+  border-radius: 15px;
+  margin: 0px 5px;
+}
+
+
+
